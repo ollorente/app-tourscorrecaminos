@@ -1,4 +1,4 @@
-import { ID } from "~/utils/fakeDB"
+import { ID } from "~~/utils/fakeDB"
 
 export interface IUserMeta {
   id: string

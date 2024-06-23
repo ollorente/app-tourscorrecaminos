@@ -15,7 +15,6 @@ export default defineNuxtConfig({
       ],
     }
   },
-  srcDir: "src",
   modules: [],
   runtimeConfig: {}
 })

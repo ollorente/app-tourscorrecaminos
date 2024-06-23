@@ -1,6 +1,6 @@
-import { Post } from "~/interfaces/Post"
-import { HTTP } from "~/utils/fakeDB"
-import Paginator from "~/utils/paginator"
+import { Post } from "~~/interfaces/Post"
+import { HTTP } from "~~/utils/fakeDB"
+import Paginator from "~~/utils/paginator"
 
 export default () => {
   const CreateOnePost = async (id: string, data: any) => {

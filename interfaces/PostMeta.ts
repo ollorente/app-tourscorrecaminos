@@ -1,4 +1,4 @@
-import { DATE, ID } from "~/utils/fakeDB"
+import { DATE, ID } from "~~/utils/fakeDB"
 
 export interface IPostMeta {
   id: string

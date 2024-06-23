@@ -1,6 +1,6 @@
-import { TermTaxonomy } from "~/interfaces/TermTaxonomy"
-import { HTTP } from "~/utils/fakeDB"
-import Paginator from "~/utils/paginator"
+import { TermTaxonomy } from "~~/interfaces/TermTaxonomy"
+import { HTTP } from "~~/utils/fakeDB"
+import Paginator from "~~/utils/paginator"
 
 export default () => {
   const CreateOneTermTaxonomy = async (id: string, data: any) => {

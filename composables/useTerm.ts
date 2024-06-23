@@ -1,4 +1,4 @@
-import { HTTP } from "~/utils/fakeDB"
+import { HTTP } from "~~/utils/fakeDB"
 
 export default () => {
   const CreateOneTerm = async (id: string, data: any) => {
