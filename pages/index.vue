@@ -7,7 +7,7 @@ const isError = ref(false)
 const loading = ref(false)
 const limit = ref(10)
 const page = ref(1)
-const items = ref<[]>([])
+const items = ref<any[]>([])
 
 const getItems = async () => {
   loading.value = true
@@ -39,7 +39,16 @@ onMounted(() => getItems())
     <UIMain :error="error" :isError="isError" :loading="loading">
       <div class="row">
         <div v-for="(item, index) in items" :key="index" class="col-12 col-md-3">
-          <Card :item="item"></Card>
+          <NuxtLink :to="`/posts/${item?.id}`">
+            <div class="card border-0 mb-4">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body py-3 px-0">
+                <h5 class="card-title">{{ item?.title }}</h5>
+                <p class="card-text">{{ item?.content.split("<!--more-->")[0] }}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </NuxtLink>
         </div>
       </div>
 
