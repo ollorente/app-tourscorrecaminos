@@ -1,56 +1,56 @@
 import { HTTP } from "~/utils/fakeDB"
 
 export default () => {
-  const CreateOneLink = async (id: string, data: any) => {
+  const CreateOneUrl = async (id: string, data: any) => {
     const item = await HTTP()
       .then(async (response) => {
-        return response.Links
+        return response.links
       })
 
     return item
   }
 
-  const GetAllLinks = async (options: any) => {
+  const GetAllUrls = async (options: any) => {
     const item = await HTTP()
       .then(async (response) => {
-        return response.Links
+        return response.links
       })
 
     return item
   }
 
-  const GetOneLink = async (id: string) => {
+  const GetOneUrl = async (id: string) => {
     const item = await HTTP()
       .then(async (response) => {
-        return response.Links
+        return response.links
       })
 
     return item
   }
 
-  const RemoveOneLink = async (id: string) => {
+  const RemoveOneUrl = async (id: string) => {
     const item = await HTTP()
       .then(async (response) => {
-        return response.Links
+        return response.links
       })
 
     return item
   }
 
-  const UpdateOneLink = async (id: string, data: any) => {
+  const UpdateOneUrl = async (id: string, data: any) => {
     const item = await HTTP()
       .then(async (response) => {
-        return response.Links
+        return response.links
       })
 
     return item
   }
 
   return {
-    CreateOneLink,
-    GetAllLinks,
-    GetOneLink,
-    RemoveOneLink,
-    UpdateOneLink,
+    CreateOneUrl,
+    GetAllUrls,
+    GetOneUrl,
+    RemoveOneUrl,
+    UpdateOneUrl,
   }
 }
